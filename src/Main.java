@@ -57,7 +57,7 @@ public class Main {
 
     }
 
-    //zadacha 3
+    //Zadacha 3
     public static void calculateRevenue(){
         Scanner input = new Scanner (System.in);
         System.out.print("Please enter unit price: ");
