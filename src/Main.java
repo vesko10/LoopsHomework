@@ -87,6 +87,33 @@ public class Main {
 
     }
 
+    //zadacha za Triangle
+    public static void triangleTask() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter first angle: ");
+        int angle1 = input.nextInt();
+        System.out.print("Please enter second angle: ");
+        int angle2 = input.nextInt();
+        System.out.print("Please enter third angle: ");
+        int angle3 = input.nextInt();
+        int sumOfAngles = angle1 + angle2 + angle3;
+        if (sumOfAngles == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
+            if (angle1 < 90 && angle2 < 90 && angle3 < 90) {
+                System.out.println("This is Acute-angled Triangle");
+
+            } else if (angle1 == 90 || angle2 == 90 || angle3 == 90) {
+                System.out.println("This is Right-angled Triangle");
+            }
+            else {
+                System.out.println("This is obtuse-angled Triangle ");
+            }
+        }
+        else {
+            System.out.println("The Triangle is not possible based on your input");
+        }
+
+    }
+
 
 }
 
