@@ -12,7 +12,7 @@ public class Main {
     }
 
 
-
+//zadacha 1
     public static String checkDayName (int day) {
         String nameOfTheDay = "";
         switch (day) {
@@ -44,6 +44,7 @@ public class Main {
         return nameOfTheDay;
     }
 
+    //zadacha 2
     public static void ageCheck() {
         Scanner input = new Scanner (System.in);
         System.out.print("Please enter your age: ");
@@ -56,6 +57,7 @@ public class Main {
 
     }
 
+    //zadacha 3
     public static void calculateRevenue(){
         Scanner input = new Scanner (System.in);
         System.out.print("Please enter unit price: ");
