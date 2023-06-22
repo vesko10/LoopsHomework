@@ -71,4 +71,6 @@ public class Homework04 {
         }
         System.out.println("The biggest elements from the array is: " + "" +  max);
     }
+
+
 }

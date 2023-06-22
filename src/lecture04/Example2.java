@@ -3,8 +3,70 @@ package lecture04;
 import java.util.*;
 
 public class Example2 {
+    static int number;
+
     public static void main(String[] args) {
-        biggestElementArray();
+        //double x = 3.6;
+       // double y = 3;
+       // double z = 4.5;
+        //System.out.println(findAverageNumber(x,y,z));
+        //displayMiddleCharacter("text:");
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter number ");
+        int number = input.nextInt();
+        if(isEven(number))
+        {
+            System.out.println("Number is even");
+        }
+        else
+        {
+            System.out.println("Number is odd");
+        }
+    }
+
+
+    public static boolean isEven(int num){
+        if(num% 2 ==0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    static void displayMiddleCharacter(String text){
+        int textLength = text.length();
+        int remainder = 0;
+
+      if (textLength % 2 == 0){
+        remainder = textLength/2;
+          int priorLetter=remainder-1;
+          System.out.println(String.valueOf(text.charAt(priorLetter))+String.valueOf(text.charAt(remainder)));
+      }else{
+          remainder=textLength/2;
+          System.out.println(text.charAt(remainder));
+      }
+
+
+
+    }
+
+
+    static double findAverageNumber(double num1, double num2, double num3 ){
+       double sum =  num1 + num2 + num3;
+       double average = sum/3;
+       return average;
+    }
+    public static double findSmallestNumber(double num1, double num2, double num3){
+        double smallestNumber = num1;
+
+        if (smallestNumber > num2){
+            smallestNumber = num2;
+        }
+        if (smallestNumber > num3){
+            smallestNumber = num3;
+        }
+        return smallestNumber;
     }
 
     public static void buildTriangle() {
@@ -274,6 +336,26 @@ public class Example2 {
         }
         System.out.println("The biggest elements from the array is: " + "" +  max);
     }
+
+    public static void printDivisibleNumbers() {
+        int[] arr = {12,15,32,42,55,75,122,132,150,180,200};
+
+        for (int i=0; i< arr.length; i++){
+            if((arr[i]%5)==0 && arr[i]<=150){
+                System.out.println(arr[i]);
+            }
+        }
+    }
+
+    static void printFirstName(String firstName){
+        System.out.println("My first name is: " +firstName);
+    }
+
+    static void printPersonAge(String firstName, int age){
+        System.out.println(firstName + " is " +age + " years old");
+    }
+
+
 }
 
 
